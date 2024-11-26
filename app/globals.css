@@ -3,6 +3,30 @@
 @tailwind utilities;
 
 @layer base {
+  body[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  body[data-theme="dark"] {
+    color-scheme: dark;
+  }
+
+  body[data-theme="blue"] {
+    color-scheme: light;
+  }
+
+  body[data-theme="violet"] {
+    color-scheme: light;
+  }
+
+  body[data-theme="orange"] {
+    color-scheme: light;
+  }
+
+  body[data-theme="green"] {
+    color-scheme: light;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
