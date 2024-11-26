@@ -5,6 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    "bg-black",
+    "bg-[blue]",
+    "bg-[violet]",
+    "bg-[orange]",
+    "bg-[green]",
+    "text-blue-600",
+    "peer-checked:text-blue-800",
+  ],
   theme: {
     container: {
       center: true,
@@ -13,6 +22,7 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+
     extend: {
       colors: {
         border: "hsl(var(--border))",
