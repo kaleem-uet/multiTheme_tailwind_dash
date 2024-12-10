@@ -12,6 +12,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import {
+  ActivityIcon,
   Calendar,
   Home,
   Inbox,
@@ -31,12 +32,12 @@ export function AppSidebar() {
   const items = [
     {
       title: "Dashboard",
-      url: "/dashboard",
+      url: "/admin/dashboard",
       icon: Home,
     },
     {
       title: "Manage",
-      url: "/manage",
+      url: "/admin/manage",
       icon: Inbox,
     },
     {
@@ -59,17 +60,22 @@ export function AppSidebar() {
       url: "#",
       icon: Settings,
     },
+    {
+      title: "View Log",
+      url: "/admin/activityLogs",
+      icon: ActivityIcon,
+    },
   ];
 
   const profileItems = [
     {
       title: "Profile",
-      url: "/profile",
+      url: "/admin/profile",
       icon: User,
     },
     {
       title: "Sign Out",
-      url: "#",
+      url: "/",
       icon: LogOut,
     },
   ];
