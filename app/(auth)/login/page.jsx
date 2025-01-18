@@ -57,6 +57,7 @@
 //   );
 // }
 
+"use client";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import React from "react";
@@ -65,7 +66,9 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import login from "../../assets/login.png";
+import { useRouter } from "next/navigation";
 export default function Login() {
+  const route = useRouter();
   return (
     <div className="flex h-screen">
       {/* Left Section */}
@@ -115,6 +118,7 @@ export default function Login() {
           {/* Sign In Button */}
           <Button
             variant="outline"
+            onClick={() => route.push("admin/dashboard")}
             className="w-full h-12 bg-gradient-to-br from-[#ff0080] to-[#7928ca] text-white rounded-lg shadow-lg text-sm font-bold"
           >
             SIGN IN
