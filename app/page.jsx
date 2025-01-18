@@ -1,10 +1,6 @@
-import { Button } from "@/components/ui/button";
 import React from "react";
+import Login from "./(auth)/login/page";
 
-export default function Home() {
-  return (
-    <div className="container mt-2">
-      <Button>Click me</Button>
-    </div>
-  );
+export default function page() {
+  return <Login />;
 }

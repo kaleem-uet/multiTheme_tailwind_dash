@@ -61,9 +61,14 @@ export default function ThemeButtons() {
       headerClass: "bg-orange-500",
     },
     {
-      name: "green",
-      displayName: "Green Mode",
-      headerClass: "bg-green-600",
+      name: "pink",
+      displayName: "pink",
+      headerClass: "#ff0080;",
+    },
+    {
+      name: "blueprint",
+      displayName: "blueprint",
+      headerClass: "#7928ca",
     },
   ];
 
@@ -71,12 +76,15 @@ export default function ThemeButtons() {
     try {
       if (theme === themeName) {
         setTheme(DEFAULT_THEME);
+        window.location.reload();
       } else {
         setTheme(themeName);
+        window.location.reload();
       }
     } catch (error) {
       console.error("Error changing theme:", error);
       setTheme(DEFAULT_THEME);
+      window.location.reload();
     }
   };
 
